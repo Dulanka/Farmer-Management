@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="pictures/National emblem.png" alt="Logo" width="50">
+        </div>
+        <h1>ECO LOGICAL FARMING</h1>
+    </header>
+
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="about us.html">About</a>
+        <a href="Institues and Centers.html">Institutes</a>
+        <a href="contact us.html">Contact</a>
+        <a href="services.html">Services</a>
+        <a href="alllogins.html">Login</a>
+        
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="pictures/food1.jpg" alt="Slide 1">
+        </div>
+        <div class="mySlides">
+            <img src="pictures/food2.jpg" alt="Slide 2">
+        </div>
+        <div class="mySlides">
+            <img src="pictures/food3.jpg" alt="Slide 3">
+        </div>
+    </div>
+
+    <section>
+        <h2>Department of Agriculture</h2>
+        <p>The Department of Agriculture (DOA) functions under the Ministry of Agriculture and is one of the <br>largest government departments with a high profile community of agricultural scientists 
+            <br> and a network of institutions covering different agro ecological regions island wide.</p></p>
+    </section>
+
+    <footer>
+        &copy; 2023 ECO LOGICAL FARMING Website. All rights reserved.
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); 
+        }
+    </script>
+</body>
+
+</html>
